@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator App</title>
+    <link rel="icon" href="./assets/img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+
+
+    
+    <div class="container">
+        
+        
+        <div class="center-container">
+            
+            <header class="splitter">
+                <div class="logo">
+                    <img src="./assets/img/logo.svg" alt="logo-splitter" id="logo">
+        
+                </div>
+            </header>
+
+            <div class="main-content">
+                <div class="center">
+
+                    <div class="left-side">
+                        <div class="part-one">
+                            <div class="bill">
+                                <label for="" id="label-bill">Bill</label>
+                                <img src="./assets/img/icon-dollar.svg" alt="icon-dollar" id="icon-dollar">
+                                <input type="number" class="input" id="input-bill" placeholder="0" oninput="setBill()">
+
+                            </div>
+
+                            <div class="select-tip">
+                                <label for="" id="select-tip">Select tip %</label>
+                                <div class="btn-grid">
+                                    <button class="btn btn-5%" id="btn-5" value="5">5%</button>
+                                    <button class="btn btn-10%" id="btn-10" value="10">10%</button>
+                                    <button class="btn active btn-15%" id="btn-15" value="15">15%</button>
+                                    <button class="btn btn-25%" id="btn-25"value="25">25%</button>
+                                    <button class="btn btn-50%" id="btn-50" value="50">50%</button>
+                                    <input type="number" placeholder="Custom" id="custom" oninput="setCustom()">
+
+                                </div>
+                            </div>
+
+                            <div class="number-people">
+                                <div class="number-people-flex">
+
+                                    <label for="" id="label-number-people">Number of People</label>
+                                    <div id="error-number-people">Can't be zero</div>
+                                </div>
+                                <img src="./assets/img/icon-person.svg" alt="icon-person" id="icon-person">
+                                <input type="number" class="input" id="input-number-people" placeholder="0" oninput="setNumberPeople()">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="right-side">
+
+                        <div class="part-two">
+                            <div class="tip-amount">
+                                <div class="label-tip-amount">
+                                    <label for="" id="tip-amount">Tip Amount</label>
+                                    <p class="person">/ person</p>
+
+                                </div>
+
+                                <div class="value-tip-amount">
+                                    <div id="value-tip-amount">$0.00</div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="total">
+                                <div class="label-total">
+                                    <label for="" id="label-total">Total</label>
+                                    <p class="person">/ person</p>
+
+                                </div>
+
+                                <div class="value-total">
+                                    <div id="value-total">$0.00</div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="reset">
+
+                                <button class="btn-reset" id="btn-reset" onclick="reset()">RESET</button>
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+<!-- <script src="./assets/js/tip_calculator.js"></script> -->
+
+<!-- <script src="./assets/js/indexTeste.js"></script>       index teste -->
+
+<script src="./assets/js/tip_calculator copy.js"></script>
+
+</body>
+
+</html>
